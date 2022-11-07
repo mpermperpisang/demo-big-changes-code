@@ -1,0 +1,17 @@
+{
+  "name": "kompas-webdriverio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "git-diff": "node ./gitDiff.js"
+  },
+  "git": {
+    "scripts": {
+      "pre-commit": "git reset && npm run git-diff && git add ."
+    }
+  },
+  "dependencies": {
+    "git-scripts": "^0.6.4"
+  }
+}
